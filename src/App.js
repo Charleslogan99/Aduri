@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Home from "./Pages/Home";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
     </div>
   );
 }
 
 export default App;
+// import React, { useState, useEffect } from 'react';
+// import Loader from './components/Loader';
+// import Home from './Pages/Home'
+// export default function App() {
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     // Simulate loading time (remove this in your actual application)
+//     const timeout = setTimeout(() => {
+//       setLoading(false);
+//     }, 3000);
+                         
+//     // Clean up the timeout to avoid memory leaks
+//     return () => clearTimeout(timeout);
+//   }, []);
+//   return (
+
+//     <div>
+//       {loading ? (
+//         <Loader />
+//       ) : (
+//         // Your main content goes here once loading is complete
+//         <div>
+//           <h1>Your App Content</h1>
+//           <Home />
+//         </div>
+      
+//       )}
+//     </div>
+//   );
+// }
