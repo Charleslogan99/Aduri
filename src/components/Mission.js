@@ -1,55 +1,47 @@
-import Logo from '../assets/Wallpaper.jpg'
+import React from 'react';
+import { FaGraduationCap, FaMedkit, FaUtensils, FaTshirt } from 'react-icons/fa';
+
 const Mission = () => {
   return (
     <div className="container mx-auto pb-16 px-4 py-8">
-        <div className='p-8'> 
-            <h1 className='font-semibold text-4xl text-blue-700 text-center'>Our Mission</h1>
-          <p className='text-sm pt-4 text-black text-center'>Help people out of poverty,and make their lives better</p>
-        </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Card 1 */}
+      <div className='p-8'>
+        <h1 className='font-semibold text-4xl text-blue-700 text-center'>Our Mission</h1>
+        <p className='text-sm pt-4 text-black text-center'>At our NGO, we are dedicated to empowering women and nurturing children to create a brighter, more equitable future. Our mission is rooted in the belief that every woman and child deserves access to education, healthcare, and opportunities for growth, regardless of their circumstances.</p>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Card 1: Education for every child */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
-          {/* Replace 'image1.jpg' with your image path */}
-          <img className="w-full  h-64 object-cover object-center" src={Logo} alt="Card 1" />
+          <FaGraduationCap className="w-full h-64 text-blue-700 p-16" />
           <div className="p-4">
-            <h3 className="text-xl font-semibold mb-2">Education for every child</h3>
-            <p className="text-blue-700">Card 1 Description</p>
-          </div>
-        </div>
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
-          {/* Replace 'image1.jpg' with your image path */}
-          <img className="w-full h-64 object-cover object-center" src={Logo} alt="Card 1" />
-          <div className="p-4">
-            <h3 className="text-xl font-semibold mb-2">Providing medical care</h3>
-            <p className="text-blue-700">Card 2 Description</p>
+            <h3 className="text-xl text-blue-700 font-satoshi mb-2">Education for every child</h3>
+            <p className="text-gray-800">Access to quality education is fundamental in breaking the cycle of poverty. We strive to ensure that every child has the opportunity to learn, grow, and thrive in a nurturing environment. Through education, we empower the next generation to reach their full potential and build brighter futures.</p>
           </div>
         </div>
 
-        {/* Card 2 */}
+        {/* Card 2: Providing medical care */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
-          {/* Replace 'icon2' with your icon */}
-          <svg className="w-full h-64 text-blue-700 p-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10" />
-            <line x1="14.31" y1="8" x2="20.05" y2="17.94" />
-            <line x1="9.69" y1="8" x2="21.17" y2="8" />
-            <line x1="7.38" y1="12" x2="13.12" y2="2.06" />
-            <line x1="9.69" y1="16" x2="3.95" y2="6.06" />
-            <line x1="14.31" y1="16" x2="2.83" y2="16" />
-            <line x1="16.62" y1="12" x2="10.88" y2="21.94" />
-          </svg>
+          <FaMedkit className="w-full h-64 text-blue-700 p-16" />
           <div className="p-4">
-            <h3 className="text-xl font-semibold mb-2">Feeding the hungry people</h3>
-            <p className="text-blue-700">Card 3 Description</p>
+            <h3 className="text-xl text-blue-700 font-satoshi mb-2">Providing medical care</h3>
+            <p className="text-gray-800">Access to quality healthcare is a fundamental human right. We are committed to providing essential medical services and support to those in need. Through preventative care, treatment, and health education initiatives, we aim to improve the well-being and resilience of individuals and communities.</p>
           </div>
         </div>
 
-        {/* Card 3 */}
+        {/* Card 3: Feeding the hungry people */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
-          {/* Replace 'image3.jpg' with your image path */}
-          <img className="w-full h-64 object-cover object-center" src={Logo} alt="Card 3" />
+          <FaUtensils className="w-full h-64 text-blue-700 p-16" />
           <div className="p-4">
-            <h3 className="text-xl font-semibold mb-2">Providing cloth people</h3>
-            <p className="text-blue-700">Card 4 Description</p>
+            <h3 className="text-xl text-blue-700 font-satoshi mb-2">Providing food for them</h3>
+            <p className="text-gray-800">Nutritious food is a basic necessity for a healthy and fulfilling life. We work tirelessly to address food insecurity and hunger within our communities. Through food distribution programs and sustainable agriculture initiatives, we strive to ensure that no one goes to bed hungry. Together, we can create a world where everyone has access to nutritious meals.</p>
+          </div>
+        </div>
+
+        {/* Card 4: Providing clothing for people */}
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+          <FaTshirt className="w-full h-64 text-blue-700 p-16" />
+          <div className="p-4">
+            <h3 className="text-xl font-satoshi text-blue-700 mb-2">Providing clothing</h3>
+            <p className="text-gray-800">Access to clean and adequate clothing is essential for dignity and well-being. We provide clothing assistance to individuals and families in need, ensuring that everyone has the warmth and protection they deserve. By promoting access to clothing, we empower individuals to participate fully in society and pursue their goals with confidence.</p>
           </div>
         </div>
       </div>

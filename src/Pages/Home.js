@@ -6,12 +6,15 @@ import Mission from '../components/Mission'
 import Footer from '../components/Footer'
 // import Testimonial from '../components/Testimonial'
 import Section from '../components/Section'
+import MajorCauses from '../components/MajorCauses'
 export default function Home() {
   return (
     <div>
       
       <Header />
       <Hero />
+      <MajorCauses />
+
       <Team />
       <Mission />
       {/* <Testimonial /> */}
