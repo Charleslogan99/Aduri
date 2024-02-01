@@ -10,11 +10,7 @@ const Nav = () => {
 
   return (
     <>
-        <div
-        id="google_translate_element"
-        className="fixed top-0 left-0 z-50 mt-5 p-2 opacity-90"
-      ></div>
- <header className="p-1 inset-x-0 top-0 bg-white shadow-xl fixed z-50">
+ {/* <header className="p-1 inset-x-0 top-0 bg-white shadow-xl fixed z-50"> */}
   
   <nav
     className="flex items-center justify-between p-6 lg:px-8"
@@ -134,7 +130,7 @@ const Nav = () => {
       </div>
     </div>
   )}
-</header>
+{/* </header> */}
     </>
    
   );
