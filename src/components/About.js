@@ -1,11 +1,14 @@
-import Nav from "./Header";
-
+// import Nav from "./Header";
+import GoogleTranslator from '../components/Translator'
 const About = () => {
   return (
     <div>
-      <Nav />
+{/* <div className="p-1 inset-x-0 top-0 bg-white shadow-xl fixed z-50"> */}
+{/* <Nav /> */}
+<GoogleTranslator />
+{/* </div> */}
       {/* Hero Section with Gradient Background */}
-      <div className="relative bg-gradient-to-r from-blue-700 to-white bg-cover bg-center h-96 md:h-screen">
+      <div className="relative mt-24  md:mt-2 lg:mt-20 bg-gradient-to-r from-blue-700 to-white bg-cover bg-center h-96 md:h-screen">
         <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

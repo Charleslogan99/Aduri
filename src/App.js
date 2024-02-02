@@ -1,8 +1,12 @@
-import Home from "./Pages/Home";
+// import React, { useState, useEffect } from 'react';
+import { RouterProvider } from 'react-router-dom';
+
+import router from './route';
+
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 }

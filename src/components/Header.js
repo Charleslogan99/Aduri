@@ -45,25 +45,25 @@ const Nav = () => {
       {/* Navigation Links */}
       <div className="hidden md:flex">
         <a
-          href="/"
+          href="/about"
           className="text-blue-700 px-3 py-2 rounded-md text-lg font-satoshi hover:text-gray-500"
         >
           About
         </a>
         <a
-          href="/"
+          href="/contact"
           className="text-blue-700 px-3 py-2 rounded-md text-lg font-satoshi hover:text-gray-500"
         >
           Contact
         </a>
         <a
-          href="/"
+          href="/projects"
           className="text-blue-700 px-3 py-2 rounded-md text-lg font-satoshi hover:text-gray-500"
         >
           Projects
         </a>
         <a
-          href="/"
+          href="/faq"
           className="text-blue-700 px-3 py-2 rounded-md text-lg font-satoshi hover:text-gray-500"
         >
           FAQ
@@ -88,25 +88,25 @@ const Nav = () => {
       <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         {/* Mobile Navigation Links */}
         <a
-          href="/"
+          href="/about"
           className="text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
         >
           About
         </a>
         <a
-          href="/"
+          href="/contact"
           className="text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
         >
           Contact
         </a>
         <a
-          href="/"
+          href="/projects"
           className="text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
         >
           Projects
         </a>
         <a
-          href="/"
+          href="/faq"
           className="text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
         >
           FAQ
