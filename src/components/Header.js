@@ -116,9 +116,10 @@ const Nav = () => {
       </div>
       {/* Donate Button in Mobile Menu */}
       <div className="px-2 pt-2 pb-3 sm:px-3">
-        <button className="bg-blue-700 text-purple-50 font-satoshi text-lg hover:bg-slate-50 w-full py-2 rounded-md">
+        {/* <button className="bg-blue-700 text-purple-50 font-satoshi text-lg hover:bg-slate-50 w-full py-2 rounded-md">
           Donate Now
-        </button>
+        </button> */}
+        <Payment />
       </div>
       {/* Close Menu Button */}
       <div className="flex justify-center">
