@@ -7,17 +7,28 @@ const Accordion = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const questions = [
-    { question: 'What is Lorem Ipsum?', answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
-    { question: 'Why do we use it?', answer: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.' },
-    { question: 'Where does it come from?', answer: 'Contrary to popular belief, Lorem Ipsum is not simply random text.' },
-    // Add more questions as needed
+  const faqList = [
+    { question: 'What is Aduri El-Shaddai Foundation?', answer: 'Aduri El-Shaddai Foundation is a non-profit organization dedicated to empowering women and children, providing them with resources and opportunities for a brighter future.' },
+    { question: 'Who can benefit from Aduri El-Shaddai Foundation?', answer: 'Women and children from marginalized communities who are in need of support and assistance can benefit from the services provided by Aduri El-Shaddai Foundation.' },
+    { question: 'What services does Aduri El-Shaddai Foundation offer?', answer: 'Aduri El-Shaddai Foundation offers a range of services including financial assistance, education and skill development programs, healthcare services, and advocacy for women and children\'s rights.' },
+    { question: 'How can I donate to Aduri El-Shaddai Foundation?', answer: 'You can donate to Aduri El-Shaddai Foundation through our website using various payment methods. We also accept donations through bank transfers and other channels.' },
+    { question: 'Is Aduri El-Shaddai Foundation a registered NGO?', answer: 'Yes, Aduri El-Shaddai Foundation is a registered non-governmental organization, recognized for its commitment to women and children empowerment.' },
+    { question: 'How can I volunteer with Aduri El-Shaddai Foundation?', answer: 'You can volunteer with Aduri El-Shaddai Foundation by contacting our volunteer coordinator or filling out a volunteer application form available on our website.' },
+    { question: 'What are the major causes supported by Aduri El-Shaddai Foundation?', answer: 'Aduri El-Shaddai Foundation supports causes related to women\'s empowerment, child education, healthcare access, and advocacy for women and children\'s rights.' },
+    { question: 'How does Aduri El-Shaddai Foundation ensure transparency in its operations?', answer: 'Aduri El-Shaddai Foundation maintains transparency in its operations through regular financial audits, reporting mechanisms, and open communication with stakeholders.' },
+    { question: 'Can I sponsor a child through Aduri El-Shaddai Foundation?', answer: 'Yes, Aduri El-Shaddai Foundation offers child sponsorship programs where individuals or organizations can sponsor a child\'s education, healthcare, and other basic needs.' },
+    { question: 'Does Aduri El-Shaddai Foundation provide emergency assistance?', answer: 'Yes, Aduri El-Shaddai Foundation provides emergency assistance to women and children in crisis situations, including natural disasters, conflicts, and emergencies.' },
+    { question: 'How does Aduri El-Shaddai Foundation measure its impact?', answer: 'Aduri El-Shaddai Foundation measures its impact through various metrics such as the number of beneficiaries served, improvements in quality of life indicators, and success stories from program participants.' },
+    { question: 'Does Aduri El-Shaddai Foundation collaborate with other organizations?', answer: 'Yes, Aduri El-Shaddai Foundation collaborates with other NGOs, government agencies, and community-based organizations to maximize its impact and reach more beneficiaries.' },
+    { question: 'Can I visit Aduri El-Shaddai Foundation projects?', answer: 'Yes, Aduri El-Shaddai Foundation welcomes visitors to its projects and facilities. Please contact our office to schedule a visit and learn more about our work.' },
+    { question: 'How can I stay updated with Aduri El-Shaddai Foundation\'s activities?', answer: 'You can stay updated with Aduri El-Shaddai Foundation\'s activities by subscribing to our newsletter, following us on social media, and visiting our website regularly for news and updates.' },
+    { question: 'Is Aduri El-Shaddai Foundation affiliated with any religious or political organization?', answer: 'No, Aduri El-Shaddai Foundation is a secular organization and operates independently of any religious or political affiliations.' },
   ];
 
   return (
     <div>
-      {questions.map((item, index) => (
-        <div key={index} className="border-b border-gray-200 py-4">
+      {faqList.map((item, index) => (
+        <div key={index} className="border-b border-gray-200 py-8">
           <div className="flex justify-between items-center">
             <h3 className="text-lg font-semibold cursor-pointer text-blue-700" onClick={() => handleToggle(index)}>
               {item.question}
@@ -27,7 +38,7 @@ const Accordion = () => {
             </svg>
           </div>
           {activeIndex === index && (
-            <p className="text-gray-600 mt-2">{item.answer}</p>
+            <p className="text-gray-900 mt-8">{item.answer}</p>
           )}
         </div>
       ))}

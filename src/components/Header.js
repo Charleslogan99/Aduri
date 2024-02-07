@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from '../assets/Logo.jpg'
+import Payment from "./Payment";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,9 +36,9 @@ const Nav = () => {
       >
         <span className="sr-only">Toggle Menu</span>
         {isOpen ? (
-          <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+          <XMarkIcon className="h-6 w-6 text-blue-700" aria-hidden="true" />
         ) : (
-          <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+          <Bars3Icon className="h-6 w-6 text-blue-700" aria-hidden="true" />
         )}
       </button>
     </div>
@@ -73,12 +74,13 @@ const Nav = () => {
     </div>
     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
       {/* Donate Button */}
-      <a
+      {/* <a
         href="/"
         className="text-sm font-semibold leading-6 text-gray-50 hover:bg-slate-500 bg-blue-700 p-2 rounded-xl"
       >
-        Donate now <span aria-hidden="true">&rarr;</span>
-      </a>
+        Donate now 
+      </a> */}
+      <Payment />
       {/* End Donate Button */}
     </div>
   </nav>
