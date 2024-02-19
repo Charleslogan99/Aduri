@@ -24,7 +24,7 @@ const Payment = () => {
   };
 
   return (
-    <div className='text-sm font-semibold leading-6 text-gray-50 hover:bg-slate-500 bg-blue-700 p-2 rounded-xl'>
+    <div className='text-sm text-center h-full  font-semibold leading-6 text-gray-50 hover:bg-slate-500 bg-blue-700 p-2 rounded-xl'>
       <PaystackButton
         {...config}
         onSuccess={onSuccess}

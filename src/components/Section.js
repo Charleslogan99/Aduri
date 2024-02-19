@@ -1,7 +1,7 @@
 // import {  ServerIcon } from '@heroicons/react/20/solid'
 import { FaHandshake, FaBalanceScale, FaHandsHelping } from 'react-icons/fa';
 
-import logo from '../assets/Image2.jpg'
+import logo from '../assets/Children1.JPG'
 
 export default function Section() {
   return (

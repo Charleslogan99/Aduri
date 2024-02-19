@@ -1,21 +1,33 @@
 import Map from '../components/Map'
 import { FaFacebook, FaTwitter, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaInstagram } from 'react-icons/fa';
+import { useSpring, animated } from 'react-spring';
+
 // import Nav from './Header';
 import GoogleTranslator from '../components/Translator'
 const Contact = () => {
+  const animationProps = useSpring({
+    from: { opacity: 0, transform: 'translateY(-50px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
+    config: { duration: 1000 },
+  });
   return (
     <div>
         {/* <Nav /> */}
         <GoogleTranslator />
-      <div className="relative bg-gradient-to-r from-blue-700 to-white  h-screen md:h-screen">
+        <animated.div
+         // className="absolute inset-0 flex flex-col justify-center items-center p-16 text-white"
+          style={animationProps}
+        >
+      <div className="relative bg-gradient-to-r from-blue-700 to-white  h-96 md:h-screen">
         <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Contact Us</h1>
-            <p className="text-lg md:text-xl">Get in touch with us</p>
+            <h1 className="text-4xl md:text-8xl font-bold mb-4">Contact Us</h1>
+            <p className="text-lg md:text-2xl">Get in touch with us</p>
           </div>
         </div>
       </div>
+      </animated.div>
 
       
       <div className="container mx-auto py-8">

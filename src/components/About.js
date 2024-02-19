@@ -1,6 +1,7 @@
 import Mission from "./Mission";
 import GoogleTranslator from "./Translator";
-import image from '../assets/Image2.jpg'
+import { useSpring, animated } from 'react-spring';
+
 const links = [
   { name: "About Us", href: "" },
   { name: "Our Major Causes", href: "" },
@@ -9,18 +10,31 @@ const links = [
 ];
 
 export default function About() {
+  const animationProps = useSpring({
+    from: { opacity: 0, transform: 'translateY(-50px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
+    config: { duration: 1000 },
+  });
   return (
     <>
       <GoogleTranslator />
       <div className="relative isolate h-full lg:h-screen overflow-hidden bg-gray-900 py-24 sm:py-32">
-        {/* Background Image */}
-        <img
-          // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-         src={image}
-          alt=""
+        <svg
           className="absolute inset-0 -z-10 opacity-60   h-full w-full object-cover object-right md:object-center"
-        />
-        {/* Abstract Shapes */}
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <rect width="100" height="100" fill="url(#gradient)" />
+          <defs>
+            <linearGradient id="gradient" gradientTransform="rotate(90)">
+              <stop offset="0%" stopColor="#1E3A8A" />
+              <stop offset="100%" stopColor="#4299E1" />
+            </linearGradient>
+          </defs>
+        </svg>
+
         <div
           className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
           aria-hidden="true"
@@ -45,29 +59,33 @@ export default function About() {
             }}
           />
         </div>
-        {/* Main Content */}
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-5xl  font-bold tracking-tight text-blue-200 sm:text-6xl">
-              ABOUT US
-            </h2>
-          </div>
-          {/* Links */}
-          <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-              {links.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="pointer-events-none text-gray-200 text-xl"
-                >
-                  {link.name} <span aria-hidden="true">&rarr;</span>
-                </a>
-              ))}
+        <animated.div
+          // className="absolute inset-0 flex flex-col justify-center items-center p-16 text-white"
+          style={animationProps}
+        >
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <h2 className="text-5xl  font-bold tracking-tight text-blue-200 sm:text-6xl">
+                ABOUT US
+              </h2>
             </div>
-            {/* Additional Content Goes Here */}
+            {/* Links */}
+            <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                {links.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="pointer-events-none text-gray-200 text-xl"
+                  >
+                    {link.name} <span aria-hidden="true">&rarr;</span>
+                  </a>
+                ))}
+              </div>
+              {/* Additional Content Goes Here */}
+            </div>
           </div>
-        </div>
+        </animated.div>
       </div>
       {/* About Section */}
       <div className="container mx-auto px-4 py-16 h-full">
@@ -82,6 +100,24 @@ export default function About() {
             communities. We stand firm on the pillars of compassion,
             empowerment, and social justice, aiming to be a guiding light for
             those encountering economic, social, and emotional hurdles.
+          </p>
+          <h2 className="text-4xl text-blue-700 font-semibold mb-4">
+            Our Objectives
+          </h2>
+          <p className="text-lg mb-16">
+            To Advocacy against child abuse and child trafficking, To Promote
+            girl child education & training especially in rural communities To
+            Promote Empowerment programmes for women and Children, To provide
+            ⁠Medical & wellness outreaches for women and children in urban and
+            rural communities against Malaria & Cancer (Breast & Cervical
+            cancer), To Promote Trainings and Sensitizations for women and
+            Children in rural communities, To Promote ⁠Advocacy against repugnant
+            customs and inhuman practices against women and children and to
+            advocate against discrimination of all kinds, To promote Advocacy
+            against gender based violence, female genital mutilation and other
+            inhuman practices against women and children, To collaborate with
+            other Associations and agencies of government on any project that
+            impact positively on life.
           </p>
           {/* Mission */}
           <h2 className="text-4xl text-blue-700 font-semibold mb-4">

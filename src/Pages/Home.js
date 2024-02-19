@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import Section from '../components/Section'
 import MajorCauses from '../components/MajorCauses'
 import GoogleTranslator from '../components/Translator'
+import Map from '../components/Map'
 export default function Home() {
   return (
     <div>
@@ -15,10 +16,12 @@ export default function Home() {
       {/* <Header /> */}
       <Hero />
       <MajorCauses />
-      <Team />
+  
       <Mission />
       {/* <Testimonial /> */}
       <Section />
+      <Team />
+      <Map />
       {/* <CountingNumbers /> */}
       <Footer />
     </div>

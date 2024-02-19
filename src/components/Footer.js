@@ -19,11 +19,11 @@ const Footer = () => {
           <div className="text-white xl:ml-20">
             <h4 className="text-lg font-semibold mb-4">Navigation</h4>
             <ul className='flex flex-col'>
-              <a href='/' className="text-blue-400" >Home</a>
-              <a href='/about' className="text-blue-400">About</a>
-              <a href='/contact' className="text-blue-400">Contact</a>
-              <a href='/projects' className="text-blue-400">Projects</a>
-              <a href='/faq' className="text-blue-400">Faq</a>
+              <a href='/' className="text-blue-400 hover:text-gray-200 ">Home</a>
+              <a href='/about' className="text-blue-400 hover:text-gray-200">About</a>
+              <a href='/contact' className="text-blue-400 hover:text-gray-200">Contact</a>
+              <a href='/projects' className="text-blue-400 hover:text-gray-200">Projects</a>
+              <a href='/faq' className="text-blue-400 hover:text-gray-200">Faq</a>
               {/* Add more programs */}
             </ul>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               <MdEmail className="inline-block mr-2" /> example@example.com
             </p>
             <p className="text-blue-400">
-              <MdPhone className="inline-block mr-2" /> +1234567890
+              <MdPhone className="inline-block mr-2" /> +234 803 320 7833
             </p>
             {/* Add more contact information */}
           </div>

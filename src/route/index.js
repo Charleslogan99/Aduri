@@ -8,6 +8,7 @@ import ContactUs from "../Pages/ContactUs";
 import FAQPage from "../Pages/Faq";
 import ProjectsPage from "../Pages/ProjectsPage";
 import ErrorPage from "../Pages/ErrorPage";
+// import ProfilePage from "../Pages/Profile";
 
 export function getNavPath(route) {
   return `/${route}`
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
     element: <AppLayout Component={ProjectsPage} />,
     errorElement: <ErrorPage />,
   },
+
 ]);
 
 export default router;
