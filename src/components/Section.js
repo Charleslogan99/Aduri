@@ -45,7 +45,7 @@ export default function Section() {
                 Aduri El-Shaddai Foundation
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                We are a nonprofit organization dedicated to improving the lives of women and children worldwide. Our mission is to provide comprehensive support and resources to empower women and children, ensuring they have the opportunity to thrive and reach their full potential.
+                We are a nonprofit organization dedicated to improving the lives of women and children in Nigeria. Our mission is to provide comprehensive support and resources to empower women and children, ensuring they have the opportunity to thrive and reach their full potential.
               </p>
             </div>
           </div>
