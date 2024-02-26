@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { NAV_ABOUT, NAV_CONTACT, NAV_FAQ, NAV_PROJECTS } from "./constants";
+import { NAV_ABOUT, NAV_CONTACT, NAV_FAQ, NAV_PROJECTS, NAV_SUPPORT } from "./constants";
 
 import Home from "../Pages/Home";
 import AboutPage from "../Pages/AboutUs";
@@ -8,7 +8,7 @@ import ContactUs from "../Pages/ContactUs";
 import FAQPage from "../Pages/Faq";
 import ProjectsPage from "../Pages/ProjectsPage";
 import ErrorPage from "../Pages/ErrorPage";
-// import ProfilePage from "../Pages/Profile";
+import SupportPage from "../Pages/SupportPage";
 
 export function getNavPath(route) {
   return `/${route}`
@@ -44,6 +44,11 @@ const router = createBrowserRouter([
   {
     path: `${getNavPath(NAV_PROJECTS)}`,
     element: <AppLayout Component={ProjectsPage} />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: `${getNavPath(NAV_SUPPORT)}`,
+    element: <AppLayout Component={SupportPage} />,
     errorElement: <ErrorPage />,
   },
 

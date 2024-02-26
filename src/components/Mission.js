@@ -10,7 +10,7 @@ const Mission = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         {/* Card 1: Child Welfare */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaChild className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center text-blue-700 font-satoshi mb-2">Child Welfare</h3>
@@ -19,7 +19,7 @@ const Mission = () => {
         </div>
 
         {/* Card 2: Maternal Health */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaHeart className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Maternal Health</h3>
@@ -28,7 +28,7 @@ const Mission = () => {
         </div>
 
         {/* Card 3: Education for Girls */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaBookReader className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Education for Girls</h3>
@@ -37,7 +37,7 @@ const Mission = () => {
         </div>
 
         {/* Card 4: Empowering Women */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaFemale className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Empowering Women</h3>
@@ -46,7 +46,7 @@ const Mission = () => {
         </div>
 
         {/* Card 5: Support for Survivors */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaRegHeart className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Support for Survivors</h3>
@@ -55,7 +55,7 @@ const Mission = () => {
         </div>
 
         {/* Card 6: Education Access */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaGraduationCap className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Education Access</h3>
@@ -64,7 +64,7 @@ const Mission = () => {
         </div>
 
         {/* Card 7: Healthcare Access */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaUserNurse className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Healthcare Access</h3>
@@ -73,7 +73,7 @@ const Mission = () => {
         </div>
 
         {/* Card 8: Emotional Support */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaHandHoldingHeart className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Emotional Support</h3>
@@ -82,7 +82,7 @@ const Mission = () => {
         </div>
 
         {/* Card 9: Safe Shelter */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaBuilding className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Safe Shelter</h3>
@@ -91,7 +91,7 @@ const Mission = () => {
         </div>
 
         {/* Card 10: Legal Assistance */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaBalanceScale className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Legal Assistance</h3>
@@ -100,7 +100,7 @@ const Mission = () => {
         </div>
 
         {/* Card 11: Community Empowerment */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaFistRaised className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Community Empowerment</h3>
@@ -109,7 +109,7 @@ const Mission = () => {
         </div>
 
         {/* Card 12: Advocacy and Policy Change */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
           <FaBuilding className="w-full h-40 text-blue-700 p-16" />
           <div className="p-4">
             <h3 className="text-3xl text-center  text-blue-700 font-satoshi mb-4">Advocacy and Policy Change</h3>

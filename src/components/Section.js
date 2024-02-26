@@ -42,7 +42,7 @@ export default function Section() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-blue-700 sm:text-4xl">
-                Our Mission
+                Aduri El-Shaddai Foundation
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
                 We are a nonprofit organization dedicated to improving the lives of women and children worldwide. Our mission is to provide comprehensive support and resources to empower women and children, ensuring they have the opportunity to thrive and reach their full potential.
