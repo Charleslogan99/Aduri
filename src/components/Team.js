@@ -1,7 +1,7 @@
 const people = [
   {
     name: '(Mrs.) Rosemary Chike',
-    role: 'Director / CEO',
+    role: 'Founder / Chairman',
 
     description:
     'She is an ordained minister of God in the Redeemed Christian church of God and a provincial Cordinator for counseling and follow-up in Abuja. She worked as a resource person (Volunteer) for UNICEF. She was also the project lead for a Non- Governmental organization by name CENFET in Abuja. She is the Founder / Chairman of Enouri Jehovah Jireh foundation for Widows and Aduri El Shaddai foundation for women and children. Educational Qualifications: MA Theology- Redeemed Christian Bible College. PGD Theology-Redeemed Christian Bible College. BSc Marketing  - Abia state university WASC - Girls Secondary School, Okigwe First School leaving certificate - Ohabuike primary school,  Afikpo.',
@@ -10,7 +10,7 @@ const people = [
   },
 
   {
-    name: '(Ms.) Mirian Okoro',
+    name: '(Barr.) Mirian Okoro',
     role: 'Director / Secretary',
     description:
       'She is a Lawyer, Writer and Human Rights Activist with several years of experience in the Nonprofit sector. She graduated from Madonna University, Okija, Nigeria in the year 2014, where she obtained her Bachelors Degree in Law with a Second Class Honors (Upper Division). Afterwards, She enrolled for the nine-month professional training at the Nigerian Law School, and after satisfying all the requirements of the Council of Legal Education, she was called to the Nigerian Bar in the year 2015. Since then, she has been actively involved in the Nigerian Civil Society in the area of Women and Children Advocacy, as well as Youth Rehabilitation through Agriculture. She is the current Secretary of Enouri Jehovah Jireh Foundation for Widows and Aduri El Shaddai Foundation for women and children',

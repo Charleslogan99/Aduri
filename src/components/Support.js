@@ -21,11 +21,8 @@ export default function Support() {
     >
       <div className="absolute inset-0 bg-black opacity-70"></div>
       <div className="text-center z-10 text-white">
-        <h1 className="text-4xl text-blue-700 md:text-6xl lg:text-8xl font-bold mb-8">Support Our NGO</h1>
-        {/* <h1 className="text-3xl text-purple-600 md:text-6xl lg:text-7xl font-bold mb-4">&</h1>
-        <h1 className="text-3xl text-gray-200 md:text-6xl lg:text-8xl  font-bold mb-4">Promoting Dignity</h1>
-        <h1 className="text-3xl text-gray-200 md:text-6xl lg:text-8xl  font-bold mb-4"><span className='text-purple-700'>&</span> Opportunity</h1>
-      */}
+        <h1 className="text-4xl text-blue-700 md:text-6xl lg:text-8xl font-bold mb-8">Support Our Initiatives</h1>
+       
        <p className="text-md text-gray-300 lg:text-xl">
             Your contributions help us make a difference in the lives of those in need. 
             Join us in our mission to bring hope and assistance to women & chidren.
@@ -68,6 +65,13 @@ export default function Support() {
             <dd className="mt-1 mb-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">0899922233</dd>
             <dt className="text-lg font-medium leading-6 text-gray-900">Pounds Account Number</dt>
             <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">0899922226</dd>
+            <dt className="text-lg font-medium leading-6 text-gray-900"> Sort Code</dt>
+            <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">058083257</dd>
+            <dt className="text-lg font-medium leading-6 text-gray-900">Swift Code</dt>
+            <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">GTBINGLA</dd>
+            <dt className="text-lg font-medium leading-6 text-gray-900">Bank Address:</dt>
+            <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Plot 1473 Ahmadu Bello Way, Area 11 Garki, Abuja FCT</dd>
+         
           </div>
           {/*  */}
 
