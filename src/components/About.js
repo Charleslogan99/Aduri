@@ -18,49 +18,45 @@ export default function About() {
   return (
     <>
       {/* <div className="relative isolate h-full lg:h-screen overflow-hidden bg-gray-900 py-24 sm:py-32"> */}
-     
-   <animated.div
+
+      <animated.div
         // className="absolute inset-0 flex flex-col justify-center items-center p-16 text-white"
         style={animationProps}
       >
-          <div
-            className="relative bg-cover bg-center h-screen flex items-center justify-center sm:mt-10 md:mt-0 xl:mt-0"
-            style={{
-              backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-            }}
-          >
-            <div className="absolute inset-0 bg-black opacity-70"></div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className=" max-w-2xl lg:mx-0">
-                
-                <h2 className="text-4xl font-bold tracking-tight text-white md:text-7xl">
-                  ABOUT US
-                </h2>
+        <div
+          className="relative bg-cover bg-center h-screen flex items-center justify-center sm:mt-10 md:mt-0 xl:mt-0"
+          style={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-black opacity-70"></div>
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className=" max-w-2xl lg:mx-0">
+              <h2 className="text-4xl font-bold tracking-tight text-white md:text-7xl">
+                ABOUT US
+              </h2>
+            </div>
+            <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                {links.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="pointer-events-none text-white text-xl"
+                  >
+                    {link.name} <span aria-hidden="true">&rarr;</span>
+                  </a>
+                ))}
               </div>
-              <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                  {links.map((link) => (
-                    <a
-                      key={link.name}
-                      href={link.href}
-                      className="pointer-events-none text-white text-xl"
-                    >
-                      {link.name} <span aria-hidden="true">&rarr;</span>
-                    </a>
-                  ))}
-                </div>
-                <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"></dl>
-              </div>
+              <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"></dl>
             </div>
           </div>
-      
+        </div>
       </animated.div>
-       
-        
-      
+
       {/* </div> */}
       {/* About Section */}
       <div className="container mx-auto px-4 py-16 h-full">
@@ -74,7 +70,13 @@ export default function About() {
             organization dedicated to empowering women and children across
             communities. We stand firm on the pillars of compassion,
             empowerment, and social justice, aiming to be a guiding light for
-            those encountering economic, social, and emotional hurdles.
+            those encountering economic, social, and emotional hurdles.Aduri El-Shaddai Foundation
+            started off as a Community based organization in the year 2020 with
+            several project collaborations with the Non-governmental
+            Organization, Star Advocacy for African Women and Children (SAFAWAC)
+            It was eventually incorporated into a full-blown Non-governmental
+            Organization in the year 2024 to further actualize its goals and
+            expand its reach across the Nigerian States.
           </p>
           <h2 className="text-4xl text-blue-700 font-semibold mb-4">
             Our Objectives
@@ -86,13 +88,13 @@ export default function About() {
             ⁠Medical & wellness outreaches for women and children in urban and
             rural communities against Malaria & Cancer (Breast & Cervical
             cancer), To Promote Trainings and Sensitizations for women and
-            Children in rural communities, To Promote ⁠Advocacy against repugnant
-            customs and inhuman practices against women and children and to
-            advocate against discrimination of all kinds, To promote Advocacy
-            against gender based violence, female genital mutilation and other
-            inhuman practices against women and children, To collaborate with
-            other Associations and agencies of government on any project that
-            impact positively on life.
+            Children in rural communities, To Promote ⁠Advocacy against
+            repugnant customs and inhuman practices against women and children
+            and to advocate against discrimination of all kinds, To promote
+            Advocacy against gender based violence, female genital mutilation
+            and other inhuman practices against women and children, To
+            collaborate with other Associations and agencies of government on
+            any project that impact positively on life.
           </p>
           {/* Mission */}
           <h2 className="text-4xl text-blue-700 font-semibold mb-4">
