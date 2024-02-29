@@ -62,9 +62,9 @@ export default function Support() {
             <dt className="text-lg font-medium leading-6 text-gray-900">Dollar Account Number</dt>
             <dd className="mt-1 mb-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">0900139586</dd>
             <dt className="text-lg mt-2 font-medium leading-6 text-gray-900">Euro Account Number</dt>
-            <dd className="mt-1 mb-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">0900139593</dd>
+            <dd className="mt-1 mb-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">0900139603</dd>
             <dt className="text-lg mt-2 font-medium leading-6 text-gray-900">Pounds Account Number</dt>
-            <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">0900139603</dd>
+            <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">0900139593</dd>
             <dt className="text-lg mt-2 font-medium leading-6 text-gray-900"> Sort Code</dt>
             <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">058083257</dd>
             <dt className="text-lg mt-2 font-medium leading-6 text-gray-900">Swift Code</dt>
